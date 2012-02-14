@@ -14,6 +14,6 @@
   "version": "0.5",
   "description": "Bowerbird helps you work with colors on a webpage. You can see what colors a page uses, find unused colors, and even edit colors.",
   "permissions": [
-    "tabs", "http://*/*", "https://*/*", "file://*/*"
+    "tabs", "http://*/*", "https://*/*"
   ]
 }
