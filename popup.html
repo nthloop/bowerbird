@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="css-colors.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+<textarea id="exporter"></textarea>
+<section id="tools" class="bar">
+  <span class="tool-section" data-select="single" id="tool-colorFormat">
+    <button id="shorthex" class="selected" title="Show HEX codes">Hex</button><button id="rgb" title="Show RGBA codes">RGB(A)</button><button id="hsl" title="Show HSLA codes">HSL(A)</button>
+  </span>
+
+  <span class="tool-section" id="tool-colorViews">
+    <button id="present" class="selected" title="Show colors used in the page">Used</button><button id="absent" title="Show colors mentioned in stylesheets, but currently absent from the page">Unused</button>
+  </span>
+
+  <span class="tool-section" id="tool-colorTypes">
+    <button id="colors" class="selected icon" title="Show Colors"></button><button id="grays" class="selected icon" title="Show Grays"></button><button id="alphas" class="selected icon" title="Toggle Semi-Transparent Shades"></button>
+  </span>
+
+  <span class="tool-section" id="tool-misc">
+    <button id="details" class="icon" title="Show more details"><button id="labels" class="icon selected" title="Toggle Labels"></button><button id="export" class="icon" title="Export the current set of colors"></button>
+  </span>
+
+</section>
+</div>
+
+<section id="noti" class="notification"></section>
+
+<div id="content-wrapper" class="wrapper">
+<section id="list-wrap">
+
+  <ul class="list" id="thumbs">
+  </ul>
+
+</section>
+<div id="color-info">
+  <h3 class="bar" id="ci-title">Details</h3>
+  <div class="inner">
+    <div id="ci-color"></div>
+    <div id="ci-detail">
+      <div id="ci-flags">
+        <span id="ci-bg">Background</span>
+        <span id="ci-fg">Text</span>
+        <span id="ci-dom">Not Used</span>
+      </div>
+      <p id="ci-code"></p>
+    </div>
+    <div id="ci-norules">
+      <p>
+        Ouch! Something prevented bowerbird from fetching the CSS Rules that feature this color.<br />
+        This could happen if – <br />
+        <ul>
+          <li>The CSS file is served using JavaScript</li>
+          <li>The CSS file is being served from a domain with improper permissions settings</li>
+        </ul><br />
+        If you feel that this isn't the case, please let us know <a href="#" target="_blank">here</a>.
+      </p>
+    </div>
+    <div id="ci-rules">
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+var WebInspector = {}, colors = [];
+</script>
+
+<script src="vendor/Color.js"></script>
+<script src="dom.js"></script>
+<script src="color-utils.js"></script>
+<script src="utils.js"></script>
+<script src="popup.js"></script>
+
+</body>
+</html>
