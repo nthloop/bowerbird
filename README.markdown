@@ -1,8 +1,11 @@
 # Bowerbird
 
-Bowerbird helps you work with colors on a webpage. You can see what
-colors a page uses (and see the CSS behind them), find unused colors,
-and even edit colors.
+Bowerbird is a Chrome Extension that helps you work with colors on a
+webpage. You can see what colors a page uses (and see the CSS behind
+them), find unused colors, and even edit colors.
+
+Please report any issues you find at
+<https://github.com/nthloop/bowerbird/issues>.
 
 ## How it works
 
@@ -23,6 +26,7 @@ We grab colors from two different places:
 
 ## Limitations / TODOs
 
+  * Creating a Safari extenstion.
   * Sometimes, stylesheets can't be parsed.
   * Pending: add a color picker when editing colors.
   * We grab colors used for background, text and borders. Some colors
