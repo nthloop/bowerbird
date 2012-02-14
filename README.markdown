@@ -38,3 +38,12 @@ Bowerbird is under an MIT license.
 
 We use some code from Webkit's excellent developer tools, the files are
 present un-modified in the vendor directory.
+
+## About Us
+
+Bowerbird is the first app by [nth loop][], a startup by [@Anks][] and
+[@xrivatsan][].
+
+  [nth loop]:  http://nthloop.com
+  [@Anks]: http://ankitsolanki.com
+  [@xrivatsan]: http://xrivatsan.com
