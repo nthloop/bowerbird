@@ -150,7 +150,8 @@ body, .wrapper { background-color: #fff; }
   .rule-prop  { margin-right: 5px; color: red; }
   .rule-value { margin-left: 5px; color: #b45800; }
 
-
+#ci-norules p, #ci-norules ul { font-size: 12px; line-height: 1.1em; margin: 10px; }
+#ci-norules ul { padding-left: 20px; }
 /* end details panel */
 
 
