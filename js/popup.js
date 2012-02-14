@@ -363,7 +363,7 @@ window.onload = function() {
   });
 
   chrome.tabs.getSelected(null, function(tab) {
-    chrome.tabs.executeScript(tab.id, { file: "content.js" });
+    chrome.tabs.executeScript(tab.id, { file: "js/content.js" });
   });
 };
 

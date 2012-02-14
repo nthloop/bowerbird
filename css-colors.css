@@ -29,26 +29,26 @@ body, .wrapper { background-color: #fff; }
       font-weight: bold; color: #444; text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
       cursor: pointer;
     }
-    
+
     #tools button:first-child { border-left: 1px solid #BDBDBD; }
       #hex    { border-left: 0; }
       #labels { border-right: 0; }
 
     #tools button.selected {
       padding-right: 7px; border-right: 0;
-      background-color: rgba(0,0,0,0.2); 
+      background-color: rgba(0,0,0,0.2);
       color: #fff; text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
       -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.35);
     }
-    
+
 /* buttons with icon labels */
-  
-  button.icon  { 
+
+  button.icon  {
     padding: 0;
-    background-image: url(icons.png); background-repeat: no-repeat;
+    background-image: url(images/icons.png); background-repeat: no-repeat;
   }
-  
-  #tool-colorTypes button { width: 40px;  }      
+
+  #tool-colorTypes button { width: 40px;  }
     #colors { background-position: 0 0; }
     #grays  { background-position: -40px 0; }
     #alphas { background-position: -80px 0; }
@@ -78,7 +78,7 @@ body, .wrapper { background-color: #fff; }
 #list-wrap {
   position: relative; z-index: 2; overflow-y: auto;
   height: 445px; padding: 1px 5px; margin-bottom: 47px;
-  background-image: url(transparent.png);
+  background-image: url(images/transparent.png);
   -webkit-box-shadow: 0 5px 5px 5px #fff;
   -webkit-transition: height 300ms ease-in;
 }
@@ -97,12 +97,12 @@ body, .wrapper { background-color: #fff; }
   text-align: left;
 }
   .selected .thumb { -webkit-box-shadow: 0 0 8px 2px rgba(200,0,0,0.7); }
-  
+
   /* hidden labels */
   #thumbs.hideLabels .code { display: none; }
 
   /* edited colors */
-  .edited .thumb { background-image: url(corner.png); background-position: top right; background-repeat: no-repeat; }
+  .edited .thumb { background-image: url(images/corner.png); background-position: top right; background-repeat: no-repeat; }
 
 
 /* styles while browsing details */
@@ -140,7 +140,7 @@ body, .wrapper { background-color: #fff; }
     width: 100%; padding-top: 20px; margin-bottom: 10px;
     font-size: 12px; line-height: 1.2em;
   }
-  
+
   .stylesheet { position: absolute; right: 3px; top: 0; color: #555; }
     .stylesheet a {
       display: block; max-width: 300px; overflow: hidden;
@@ -170,7 +170,7 @@ body, .wrapper { background-color: #fff; }
 }
 
 .notification {
-  width: 100%; padding: 6px; z-index: 3; 
+  width: 100%; padding: 6px; z-index: 3;
   background: rgba(255,261,148,0.9); opacity: 1;
   text-align: center; font-weight: bold;
 }

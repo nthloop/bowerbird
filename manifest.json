@@ -1,13 +1,13 @@
 {
   "browser_action": {
-    "default_icon": "colors-19.png",
+    "default_icon": "images/colors-19.png",
     "default_title": "BowerBird helps you work with colors on a webpage.",
     "popup": "popup.html"
   },
   "icons": {
-    "16":  "colors-16.png",
-    "48":  "colors-48.png",
-    "128": "colors-128.png"
+    "16":  "images/colors-16.png",
+    "48":  "images/colors-48.png",
+    "128": "images/colors-128.png"
   },
   "homepage_url": "http://nthloop.github.com/bowerbird",
   "name": "BowerBird",
