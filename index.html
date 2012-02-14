@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bowerbird — A Chrome extension for working with color</title>
+<!-- <link href="bowerbirdpage.css"> -->
+<style>
+* { margin: 0; padding: 0; outline: none; }
+
+body {
+  background-color: #eaddc9;
+  font: 18px/1.5 Georgia, Serif; text-align: center; color: #404040;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+}
+
+a { text-decoration: none; color: #0cf; }
+a:visited { color: #b332cd; }
+
+p { margin-bottom: 10px; }
+
+ul { padding-left: 20px; }
+
+.wrapper { margin: 0 auto; width: 800px; text-align: left; }
+
+header { margin: 40px 0 60px; background: url(bird.png) right bottom no-repeat; height: 446px; }
+
+h1,h2,h3 { font-family: "Nixie One", Serif; color: #fff; text-shadow: none; }
+
+h1 { font: 94px/1.2 normal "Nixie One", Serif; }
+.subtitle { font-size: 1.8em; line-height: 1.7em; width: 380px; }
+
+h2 { margin: 30px 0 5px; color: #404040; }
+
+h2.wood { color: #fff; padding: 32px 0 50px 145px; margin-bottom: -5px; background: url(wood.png) center center no-repeat; position: relative; }
+  .badge { position: absolute; width: 128px; height: 128px; left: 25px; top: -60px; }
+
+::selection { background: #ff7062; color: #fff; }
+
+</style>
+<link href="http://fonts.googleapis.com/css?family=Nixie+One" rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="wrapper">
+  <header>
+    <h1>Bowerbird</h1>
+    <p class="subtitle">is a Chrome Extension that helps you work with colors on a webpage.
+    <br />Explore the colors a page uses, find unused colors, and even edit colors.</p>
+  </header>
+  
+  <section class="content">
+    <h2 class="wood"><a href="https://chrome.google.com/webstore/detail/ijhcklddpbfbnnabmlhpjdlmokhfiljd" class="badge"><img src="badge.png"></a>Download it from the Chrome App Store!</h2>    
+    
+    
+    <p style="text-align: right; margin-right: 20px;">Please report any issues  
+    <a href="https://github.com/nthloop/bowerbird/issues">here</a>.</p>
+    
+    <h2>How it works</h2>
+    
+    <p>We grab colors from two different places:</p>
+    
+    <ul>
+    <li><p>The <code>document.styleSheets</code> API is used (when available) to go
+    through all CSS rules present and extract colors mentioned. This
+    gives us a list of colors mentioned in stylesheets, some of which
+    may not even be present on the page.</p>
+    
+    <p>There are a few restrictions to this API, though. It is not
+    available for <code>file:///</code> URLs, and sometimes fails for stylesheets
+    loaded from a third-party URL.</p></li>
+    <li><p>We also iterate over each element on the page and use
+    <code>getComputedStyle</code> in order to get all the colors <em>currently
+    present</em> on the page.</p></li>
+    </ul>
+    
+    <h2>Todo</h2>
+    
+    <ul>
+    <li>Creating a Safari extension.</li>
+    <li>Sometimes, stylesheets can't be parsed — figure out why, and use
+    workarounds.</li>
+    <li>Add a color picker when editing colors.</li>
+    <li>Parse complex CSS values like gradients.</li>
+    </ul>
+    
+    <h2>License</h2>
+    
+    <p>Bowerbird is under an MIT license.</p>
+    
+    <p>We use some code from Webkit's excellent developer tools, the files are
+    present un-modified in the vendor directory.</p>
+        
+  </section>
+    
+  </div>
+</body>
+</html>
