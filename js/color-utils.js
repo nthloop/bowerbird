@@ -1,3 +1,7 @@
+/*
+ * Copyright: Ankit Solanki, nth loop, 2012.
+ * Bowerbird may be freely distributed under the MIT license.
+ */
 
 /**
  * Utility functions around colors.

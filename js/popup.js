@@ -1,6 +1,6 @@
 /*
  * Copyright: Ankit Solanki, nth loop, 2012.
- * BowerBird may be freely distributed under the MIT license.
+ * Bowerbird may be freely distributed under the MIT license.
  */
 
 (function () {
