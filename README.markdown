@@ -24,19 +24,13 @@ We grab colors from two different places:
     `getComputedStyle` in order to get all the colors _currently
     present_ on the page.
 
-## Limitations / TODOs
+## Pending
 
-  * Creating a Safari extenstion.
-  * Sometimes, stylesheets can't be parsed.
-  * Pending: add a color picker when editing colors.
-  * We grab colors used for background, text and borders. Some colors
-    may be missed, and complex CSS values like gradients aren't parsed.
-  * Finally, Bowerbird does not look at image data.
-
-## Help required
-
-We aren't really sure about the right way to sort colors when presenting
-them to the user. Any pointers for this issue are welcome :)
+  * Creating a Safari extension.
+  * Sometimes, stylesheets can't be parsed — figure out why, and use
+    workarounds.
+  * Add a color picker when editing colors.
+  * Parse complex CSS values like gradients.
 
 ## License
 
